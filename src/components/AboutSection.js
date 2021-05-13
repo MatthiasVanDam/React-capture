@@ -3,7 +3,8 @@ import home1 from "../img/home1.png";
 
 //Motion
 import { motion } from "framer-motion";
-import { titleAnime } from "../Animation";
+import { titleAnime, photoAnime, fade } from "../Animation";
+import Wave from "../components/Wave";
 //styled
 // import styled from "styled-components";
 import { About, Description, Hide, Image } from "../Styled";
@@ -14,25 +15,30 @@ const AboutSection = () => {
       <Description>
         <motion.div>
           <Hide>
-            <motion.h2>We work to make</motion.h2>
+            <motion.h2 variants={titleAnime}>We work to make</motion.h2>
           </Hide>
           <Hide>
-            <motion.h2>
+            <motion.h2 variants={titleAnime}>
               your <span>dreams</span> come
             </motion.h2>
           </Hide>
           <Hide>
-            <motion.h2>true.</motion.h2>
+            <motion.h2 variants={titleAnime}>true.</motion.h2>
           </Hide>
         </motion.div>
-        <p>
+        <motion.p variants={fade}>
           Contact us for any photography or videography ideas that you have.
-        </p>
+        </motion.p>
         <button>Contact Us</button>
       </Description>
       <Image>
-        <img src={home1} alt="guy with camera"></img>
+        <motion.img
+          variants={photoAnime}
+          src={home1}
+          alt="guy with camera"
+        ></motion.img>
       </Image>
+      <Wave />
     </About>
   );
 };

@@ -31,14 +31,13 @@ const Nav = () => {
 
 const StyledNav = styled.nav`
   min-height: 10vh;
+  width: 100vw;
   display: flex;
   margin: auto;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10rem;
-  background: #1b1b1b;
-  z-index: 9999;
-  position: relative;
+  background: #2c2c2c;
 
   #logo {
     font-size: 1.5rem;
