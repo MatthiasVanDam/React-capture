@@ -36,6 +36,9 @@ const StyledNav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10rem;
+  background: #1b1b1b;
+  z-index: 9999;
+  position: relative;
 
   #logo {
     font-size: 1.5rem;
