@@ -10,7 +10,7 @@ import goodtimes from "../img/goodtimes-small.png";
 
 //motion Animations
 import { motion } from "framer-motion";
-import { pageAnimation } from "./Animation";
+import { pageAnimation } from "../Animation";
 const OurWork = () => {
   return (
     <Work
